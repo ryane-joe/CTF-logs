@@ -1,18 +1,27 @@
-pickle rick
+***pickle rick(try hack me)***
+late night 24-09-2023, early morning 25-09-2023
+started at: 1 am
 
-1:03- nmap scan
-1:03 - discovered ssh and http ports open
-1:04- visited website
-1:04- inspected code, USERNAME: R1ckRul3s
-1:04- starting dirbuster
-1:13- found robots.txt file, login/portal
-1:14- robots.txt had fake key
-1:16- captured login prompt- username=R1ckRul3s&password=lol&sub=Login using burpsuite
-1:18- tried to use hydra then remembered the robots.txt fake key., worked as password
-1:19- loged in, the site shows several pages, only the commands page is acsciible, commands page lets me run linux commands
-01:25- found the first key text file, does not let me cat, will try do a reverse shell
-1:29 - reverse shell failed, but realised i can do ip/filename which revealed first key: mr. meeseek hair
-1:30- found a clue file while doing ls -a
-1:33: clue was to look around the file system, not very helpful
-1:57: after struggling, found rick directory, and although cat doesnt work, less works: 1 jerry tear
-1:59: used sudo -l to see what privilages i had, then after reasling i had all, used sudo to go to root folder, saw 3rd.txt there, and upon lessing it, i got the 3rd key:fleeb juice
+1:03-> nmap scan
+1:03 -> Discovered SSH and HTTP ports open
+1:04 -> Visited website
+1:04 ->inspected code, USERNAME: R1ckRul3s
+1:04 -> Starting dir buster
+1:13 -> found robots.txt file, login/portal
+1:14 -> robots.txt had a fake key
+1:16 -> captured login prompt- username=R1ckRul3s&password=lol&sub=Login using burpsuite
+1:18 -> tried to use Hydra then remembered the robots.txt fake key., worked as password
+1:19 -> logged in, the site shows several pages, only the commands page is accessible, commands page lets me run Linux commands
+1:25 -> found the first key text file, does not let me cat, will try do a reverse shell
+1:29 -> reverse shell failed, but realised i can do ip/filename which revealed first key: mr. meeseek hair
+1:30 -> found a clue file while doing ls -a
+1:33 -> The clue was to look around the file system, not very helpful
+1:57 -> After struggling, I found Rick directory, and although cat doesn't work, 'less' works: 1 jerry tear
+1:59 -> used sudo -l to see what privileges i had, then after realising i had all, used sudo to go to root folder, saw 3rd.txt there, and upon lessing it, i got the 3rd key:fleeb juice
+
+
+---notes---
+#>spent like 15-20 minutes trying use cheat sheets online to try backdoor
+#>spent a good while going through directories, learned to check home first
+#>wasted time trying bypass cat, learnt about less so will be useful in da future
+#>learnt privy examination (sudo -l) and its uses
